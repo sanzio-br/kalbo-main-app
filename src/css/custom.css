@@ -1,0 +1,61 @@
+.gallery-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+.gallery-title{
+    font-weight: 700;
+    margin-top: 0;
+}
+.box-icon-classNameic{
+    border: 1px solid #a9a9a9;
+    padding: 1em;
+    transition: .5s;
+}
+.box-icon-classNameic:hover{
+    box-shadow: 0 30px 30px rgba(0,0,0,0.4);
+    border: none;
+}
+.box-icon-classNameic-icon{
+    font-size: 5em;
+    color: var(--red);
+}
+.box-icon-classNameic-title{
+    font-size: 1.3em;
+}
+.box-position{
+    background-image: url(../images/Kalbo\ Adventures\ Karuru\ Experience\ 2021-31.jpg);
+}
+.progress .progress-bar {
+    animation-duration: 2s, 1s;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1), linear;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: 1, infinite;
+    animation-direction: normal, normal;
+    animation-fill-mode: none, none;
+    animation-play-state: running, running;
+    animation-name: animateBar, progress-bar-stripes;
+    width: 78%; 
+    background-color: rgb(107, 107, 107);
+  }
+  .circle-background,
+  .circle-progress {
+    fill: red;
+  }
+  
+  .circle-background {
+    stroke: #ddd;
+  }
+  
+  .circle-progress {
+    stroke: red;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .circle-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+  }
