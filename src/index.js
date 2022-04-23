@@ -13,6 +13,7 @@ import './css/swiper.css'
 import './css/Navbar.css'
 import './css/custom.css'
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

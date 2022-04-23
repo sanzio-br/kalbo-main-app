@@ -1,59 +1,45 @@
-import Place from '../../images/view.jpg'
-export default function Holder(){
-    const data =[
-        {
-            imgUrl:{Place},
-            destination:"Benidorm, Spain",
-            reviews:5,
-            price:3000,
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis illum quis dolore dolorum explicabo quasi, magni suscipit totam nesciunt nostrum repellendus perferendis facilis repudiandae. Mollitia praesentium earum rem quam?",
-        },
-        {
-            imgUrl:{Place},
-            destination:"Benidorm, Spain",
-            reviews:5,
-            price:3000,
-            description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis illum quis dolore dolorum explicabo quasi, magni suscipit totam nesciunt nostrum repellendus perferendis facilis repudiandae. Mollitia praesentium earum rem quam?",
-        },
-    ]
-    return(
-        <section className="section section-sm bg-default">
-        <div className="container">
-          <h3 className="oh-desktop"><span className="d-inline-block wow slideInDown">Hot Tours</span></h3>
-          <div className="row row-sm row-40 row-md-50">
-            <div className="col-sm-6 col-md-12 wow fadeInRight">
-              {/* products card */}
-              {data.map(({imgUrl,destination,description,reviews,price}) =>{
-                  return(
-                    <article className="product-big">
-                    <div className="unit flex-column flex-md-row align-items-md-stretch">
-                      <div className="unit-left">
-                          <div className="product-big-figure">
-                              <img src={Place} alt="" width="600"
-                            height="366" /></div></div>
-                      <div className="unit-body">
-                        <div className="product-big-body">
-                          <h5 className="product-big-title">
-                              <p>{destination}</p></h5>
-                          <div className="group-sm group-middle justify-content-start">
-                            <div className="product-big-rating"><span className="icon material-icons-star"></span><span
-                                className="icon material-icons-star"></span><span className="icon material-icons-star"></span><span
-                                className="icon material-icons-star"></span><span className="icon material-icons-star_half"></span></div>
-                                <span className="product-big-reviews">{reviews} customer reviews</span>
-                          </div>
-                          <p className="product-big-text">{description}</p>
-                          <a className="button button-black-outline button-ujarak" href="https://wa.me/+254720 126177">Book
-                            This Tour</a>
-                          <div className="product-big-price-wrap"><span className="product-big-price">ksh {price}/=</span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  )
-              })}
-            </div>
+import image1 from '../../images/Kalbo Adventures Karuru Experience 2021-31.jpg'
+import image2 from '../../images/Kalbo Adventures Karuru Experience 2021-193.jpg'
+import image3 from '../../images/Kalbo Adventures Karuru Experience 2021-256.jpg'
+export default function Holder() {
+
+  return (
+    <div >
+      <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img className="d-block w-100" src={image1} alt="First slide" />
+      <div className='cover-text carousel-caption'>
+        <h6 className="text-uppercase" data-aos="fade-left">
+          Enjoy the Best Destinations with Our Travel Agency
+        </h6>
+        <h2 class="oh font-weight-light" data-aos="fade-up">
+          <span>Explore</span>  <span className="font-weight-bold">
+            The World
+          </span>
+        </h2>
+        <a className="button button-default-outline button-ujarak" href="/contacts"
+          data-aos="fade-up">
+          Get in touch
+        </a>
+      </div>
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src={image2} alt="Second slide" />
+          </div>
+          <div className="carousel-item">
+            <img className="d-block w-100" src={image3} alt="Third slide" />
           </div>
         </div>
-      </section>
-    )
+        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  )
 }

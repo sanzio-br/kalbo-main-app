@@ -23,17 +23,21 @@ export default function Choice() {
                                 <div className="tab-pane fade" id="tabs-4-2">
                                     <div className="row row-40 justify-content-center text-center inset-top-10">
                                         <div className="col-sm-4">
-                                            {/* <!-- Circle Progress Bar--> */}
+                                            <div className="progress blue"> <span className="progress-left"> <span className="progress-bar"></span> </span> <span className="progress-right"> <span className="progress-bar"></span> </span>
+                                                <div className="progress-value"></div>
+                                            </div>
                                             <p className="progress-bar-circle-title">Tours</p>
                                         </div>
                                         <div className="col-sm-4">
-                                            {/* <!-- Circle Progress Bar--> */}
-                                            <div className="progress-bar-circle" data-value="0.74" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
-                                            <p className="progress-bar-circle-title">Excursions</p>
+                                            <div className="progress blue"> <span className="progress-left"> <span className="progress-bar"></span> </span> <span className="progress-right"> <span className="progress-bar"></span> </span>
+                                                <div className="progress-value">88</div>
+                                            </div>
+                                            <p className="progress-bar-circle-title">Excursion</p>
                                         </div>
                                         <div className="col-sm-4">
-                                            {/* <!-- Circle Progress Bar--> */}
-                                            <div className="progress-bar-circle" data-value="0.99" data-gradient="#01b3a7" data-empty-fill="transparent" data-size="150" data-thickness="12" data-reverse="true"><span></span></div>
+                                        <div className="progress blue"> <span className="progress-left"> <span className="progress-bar"></span> </span> <span className="progress-right"> <span className="progress-bar"></span> </span>
+                                                <div className="progress-value">78</div>
+                                            </div>
                                             <p className="progress-bar-circle-title">Hotel Bookings</p>
                                         </div>
                                     </div>

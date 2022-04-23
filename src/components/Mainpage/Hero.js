@@ -2,8 +2,7 @@
 import image1 from '../../images/Kalbo Adventures Karuru Experience 2021-31.jpg'
 import image2 from '../../images/Kalbo Adventures Karuru Experience 2021-193.jpg'
 import image3 from '../../images/Kalbo Adventures Karuru Experience 2021-256.jpg'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 // You can also use <link> for styles
 // ..
 
@@ -20,7 +19,6 @@ import "../../css/swiper.css"
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Hero() {
-  AOS.init();
   return (
     <section className='swiper-container section hero'>
       <Swiper

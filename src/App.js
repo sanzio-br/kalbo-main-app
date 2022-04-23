@@ -9,7 +9,10 @@ import Hambuger from "./components/Hambuger";
 import Blogs from "./components/Blogs/Blogspage";
 import Events from "./components/events/EventsPage";
 import Topbar from "./components/Topbar";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
+  AOS.init();
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' })
   return (
     <Router>
