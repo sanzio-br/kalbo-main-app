@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {  getDocs, collection } from "firebase/firestore";
+import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../firebase-config";
 import '../../css/blogs.css'
 import { Link } from 'react-scroll';
-function Codeholder() {
+import PostComment from "./comments";
+function Blog() {
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
   useEffect(() => {
@@ -21,7 +22,7 @@ function Codeholder() {
           <div className="col-lg-8 m-15px-tb">
             {postLists.map(({ title, postText, author, id }) => {
               return (
-                <article className="article" id={`${id}`}>
+                <article className="article" key={id} id={`${id}`} data-aos="fade-up">
                   <div className="article-img">
                     <img src="https://via.placeholder.com/800x350/87CEFA/000000" title="" alt="" />
                   </div>
@@ -42,15 +43,16 @@ function Codeholder() {
                 </article>
               )
             })}
+            <PostComment />
           </div>
-          <div className="col-lg-4 m-15px-tb blog-aside">
-            <div className="widget widget-latest-post">
-              <div className="widget-title">
-                <h3>Latest Post</h3>
-              </div>
-              <div className="widget-body">
-                {postLists.map(({ title, author, id }) => {
-                  return (
+          {postLists.map(({ title, author, id }) => {
+            return (
+              <div className="col-lg-4 m-15px-tb blog-aside" data-aos="fade-left" key={id}>
+                <div className="widget widget-latest-post">
+                  <div className="widget-title">
+                    <h3>Latest Post</h3>
+                  </div>
+                  <div className="widget-body">
                     <div className="latest-post-aside media">
                       <div className="lpa-left media-body">
                         <div className="lpa-title">
@@ -70,15 +72,15 @@ function Codeholder() {
                         </a>
                       </div>
                     </div>
-                  )
-                })}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            )
+          })}
         </div>
       </div>
     </div>
   );
 }
 
-export default Codeholder;
+export default Blog;

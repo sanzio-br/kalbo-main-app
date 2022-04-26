@@ -70,7 +70,7 @@ export default function Services() {
               </div>
             </article>
           </div>
-          <div className="col-sm-6 col-lg-4" data-aos="fade-up-right">
+          <div className="col-sm-6 col-lg-4" >
             <article className="box-icon-classNameic" data-aos="fade-up">
               <div className="unit box-icon-classNameic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                 <div className="unit-left">

@@ -18,6 +18,7 @@ export default function Gallery() {
             grabCursor={true}
             modules={[EffectCards]}
             className="mySwiper gallery"
+            data-aos="fade-up"
           >
             <SwiperSlide><img src={Photo} alt="" /></SwiperSlide>
             <SwiperSlide><img src={Photo} alt="" /></SwiperSlide>

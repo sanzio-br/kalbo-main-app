@@ -17,6 +17,7 @@ import "../../css/swiper.css"
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -36,53 +37,59 @@ export default function Hero() {
         className="mySwiper">
         <SwiperSlide>
           <img src={image1} alt="" />
-          <div className='cover-text'>
-            <h6 className="text-uppercase" data-aos="fade-left">
-              Enjoy the Best Destinations with Our Travel Agency
+          <div className='cover-text col-md-10'>
+            <h6 className="text-uppercase h6" data-aos="fade-left">
+            Enjoy the Best Destinations with us
             </h6>
-            <h2 class="oh font-weight-light" data-aos="fade-up">
+            <h2 class="oh font-weight-light h2" data-aos="fade-up">
               <span>Explore</span>  <span className="font-weight-bold">
-                The World
+              The World
               </span>
             </h2>
+            <Link to='Contacts'>
             <a className="button button-default-outline button-ujarak"   href="/contacts"
-              data-aos="fade-up">
+              data-aos="fade-up" >
               Get in touch
             </a>
+            </Link>
           </div>
-        </SwiperSlide>
+          </SwiperSlide>
         <SwiperSlide>
           <img src={image2} alt="" />
-          <div className='cover-text'>
-            <h6 className="text-uppercase" data-aos="fade-left">
+          <div className='cover-text col-md-10'>
+            <h6 className="text-uppercase h6" data-aos="fade-left">
             Build your Next Holiday Trip with Us
             </h6>
-            <h2 class="oh font-weight-light" data-aos="fade-up">
+            <h2 class="oh font-weight-light h2" data-aos="fade-up">
               <span>Create</span>  <span className="font-weight-bold">
               Your Tour
               </span>
             </h2>
+            <Link to='Contacts'>
             <a className="button button-default-outline button-ujarak"   href="/contacts"
-              data-aos="fade-up">
+              data-aos="fade-up" >
               Get in touch
             </a>
+            </Link>
           </div>
           </SwiperSlide>
         <SwiperSlide>
           <img src={image3} alt="" />
-          <div className='cover-text'>
-            <h6 className="text-uppercase" data-aos="fade-left">
+          <div className='cover-text col-md-10'>
+            <h6 className="text-uppercase h6" data-aos="fade-left">
             A team of professional Travel Experts
             </h6>
-            <h2 class="oh font-weight-light" data-aos="fade-up">
+            <h2 class="oh font-weight-light h2" data-aos="fade-up">
               <span>Trust</span>  <span className="font-weight-bold">
               Our Experience
               </span>
             </h2>
+            <Link to='Contacts'>
             <a className="button button-default-outline button-ujarak"   href="/contacts"
-              data-aos="fade-up">
+              data-aos="fade-up" >
               Get in touch
             </a>
+            </Link>
           </div>
           </SwiperSlide>
       </Swiper>

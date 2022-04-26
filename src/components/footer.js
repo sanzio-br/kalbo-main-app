@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="section footer-corporate context-dark">
-            <div className="footer-corporate-inset">
+            <div className="footer-corporate-inset" >
                 <div className="container">
                     <div className="row row-40 justify-content-lg-between">
-                        <div className="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+                        <div className="col-sm-6 col-md-12 col-lg-3 col-xl-4" data-aos="fade-right">
                             <div className="oh-desktop">
                                 <div className="wow slideInRight" data-wow-delay="0s">
                                     <h6 className="text-spacing-100 text-uppercase">
@@ -61,7 +61,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-md-5 col-lg-3 col-xl-4">
+                        <div className="col-sm-6 col-md-5 col-lg-3 col-xl-4" data-aos="fade-left">
                             <div className="oh-desktop">
                                 <div className="wow slideInDown" data-wow-delay="0s">
                                     <h6 className="text-spacing-100 text-uppercase">
@@ -94,7 +94,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+                        <div className="col-sm-11 col-md-7 col-lg-5 col-xl-4" data-aos="fade-right">
                             <div className="oh-desktop">
                                 <div className="wow slideInLeft" data-wow-delay="0s">
                                     <h6 className="text-spacing-100 text-uppercase">

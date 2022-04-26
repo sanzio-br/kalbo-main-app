@@ -51,6 +51,13 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .h6, .h2 , .a-tag{
+    font-size: 3vw !important;
+  }
+  .h2:nth-child(1){
+    font-size: 2vw !important;
+  }
   .gallery {
     width: 70vw;
     height: 60vh;
@@ -65,4 +72,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media screen and (max-width: 600px) {
+    .swiper-slide > .cover-text{
+      margin-left: 7px;
+    }
   }

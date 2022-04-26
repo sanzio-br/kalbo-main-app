@@ -4,6 +4,7 @@ import { db } from "../../firebase-config";
 import { AiOutlineCalendar } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { AiOutlineClockCircle } from 'react-icons/ai'
+import Breadcrumbs from "./crubs";
 export default function Events() {
   const [eventsList, setEventsList] = useState([]);
   const postsCollectionRef = collection(db, "events");
@@ -18,6 +19,7 @@ export default function Events() {
   }, []);
   return (
     <section>
+      <Breadcrumbs/>
       <div className="card-container">
         {
           eventsList.map(({ title, destination, numOfDays, price, id, author }) => {
