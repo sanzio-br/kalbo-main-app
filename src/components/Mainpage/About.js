@@ -8,10 +8,11 @@ export default function About(){
               <img src={logo} alt="" width="556" height="382" />
             </div>
             <div className="col-lg-6 wow "
-            data-aos="fade-down-left"
-             data-wow-delay=".1s">
+            data-aos="fade-down-left">
               <div className="box-width-lg-470">
-                <h3>Discover New Horizons</h3>
+                <h3 style={
+                  {'color':'var(--red)'}
+                }>Discover New Horizons</h3>
                 {/* <!-- Bootstrap tabs--> */}
                 <div className="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left" id="tabs-7">
                   {/* <!-- Nav tabs--> */}

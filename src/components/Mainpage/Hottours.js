@@ -21,14 +21,14 @@ export default function Hottours() {
   const hottours = eventsList.slice(0, size);
   return (
     <section>
-      <h3 className="oh-desktop"><span className="d-inline-block wow slideInDown">Hot Tours</span></h3>
+      <h3 className="oh-desktop" style={{'color':'var(--red)'}}><span className="d-inline-block wow slideInDown">Hot Tours</span></h3>
       <div className="card-container">
         {
-          hottours.map(({ title, destination, numOfDays, price}) => {
+          hottours.map(({ title, destination, numOfDays, price,url,date}) => {
             return (
               <div className="eventCard" data-aos="fade-up">
                 <div className="imgBox">
-                  <img src="https://source.unsplash.com/600x400/?computer" alt="" />
+                  <img src={url} alt="" />
                 </div>
                 <div className="card-details">
                   <p>{title}</p>
@@ -36,7 +36,7 @@ export default function Hottours() {
                     <GoLocation /> {destination}
                   </span>
                   <span className='date'>
-                    <AiOutlineCalendar /> Date:
+                    <AiOutlineCalendar /> Date: {date}
                   </span>
                   <span className="days">
                     <AiOutlineClockCircle /> Number of days: {numOfDays}

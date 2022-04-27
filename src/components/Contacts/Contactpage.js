@@ -4,7 +4,7 @@ import Contactinfo from "./Contactinfo";
 
 export default function Contactpage(){
     return(
-        <section>
+        <section className="contacts">
             {/* <GoogleMap/> */}
             <Contactinfo/>
             <ContactsForm/>

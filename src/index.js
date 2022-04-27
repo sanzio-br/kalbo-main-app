@@ -13,7 +13,7 @@ import './css/card.css'
 import './css/swiper.css'
 import './css/Navbar.css'
 import './css/custom.css'
-
+import './css/blogs.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

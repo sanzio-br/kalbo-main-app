@@ -1,3 +1,18 @@
+/* service page in the main page styling start */
+
+.box-icon-classNameic-text{
+    color: #fff !important;
+}
+
+/* service page in the main page styling  end*/
+
+/* contacts page styling start  */
+.title-classNameic-text{
+    color:#fff;
+}
+
+/* contacts page styling end  */
+
 .gallery-section{
     display: flex;
     align-items: center;

@@ -18,15 +18,23 @@ export default function Events() {
     getEvents();
   }, []);
   return (
-    <section>
+    <section style={{
+      'text-align':'center'
+    }}>
       <Breadcrumbs/>
-      <div className="card-container">
+      <h3 style={{
+        'color': 'var(--red)',
+        "margin":"5px auto"
+        }}>
+        Available Tours
+        </h3>
+      <div className="card-container" style={{'background-color':'var(--gray)'}}>
         {
-          eventsList.map(({ title, destination, numOfDays, price, id, author }) => {
+          eventsList.map(({ title, destination, numOfDays, price, id, url,date }) => {
             return (
-              <div className="eventCard">
+              <div className="eventCard" key={id}>
                 <div className="imgBox">
-                  <img src="https://source.unsplash.com/600x400/?computer" alt="" />
+                  <img src={url} alt="" />
                 </div>
                 <div className="card-details">
                   <p>{title}</p>
@@ -34,7 +42,7 @@ export default function Events() {
                     <GoLocation /> {destination}
                   </span>
                   <span className='date'>
-                    <AiOutlineCalendar /> Date:
+                    <AiOutlineCalendar /> Date: {date}
                   </span>
                   <span className="days">
                     <AiOutlineClockCircle /> Number of days: {numOfDays}

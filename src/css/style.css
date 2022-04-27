@@ -1,7 +1,8 @@
 
 :root{
-	--red:#f38820;
-	--grey:#232230;
+	--red:#e24a1b;
+	--grey:#424242;
+	--gray:#333333;
 }
 a:focus,
 button:focus {
@@ -93,15 +94,6 @@ figure {
 html p a:hover {
 	text-decoration: none;
 }
-
-/*
-*
-* Contexts
-*/
-/*
-*
-* Typography
-*/
 body {
 	font-family: "Montserrat", sans-serif, Arial, sans-serif !important;
 	font-size: 14px;
@@ -120,7 +112,7 @@ h1, h2, h3, h4, h5, h6, [class*='heading-'] {
 	font-weight: 600;
 	font-family: "Montserrat", sans-serif, Arial, sans-serif;
 	letter-spacing: normal;
-	color: #151515;
+	color: var(--red);
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class*='heading-'] a {
@@ -301,30 +293,25 @@ p [style*='max-width'] {
 */
 a {
 	transition: all 0.3s ease-in-out;
+	color: #fff !important;
+	text-decoration: none !important;
+}
+a:focus, a:active, a:hover {
+	text-decoration: none !important;
+	color:var(--red ) !important;
 }
 
-a, a:focus, a:active, a:hover {
-	text-decoration: none;
-}
-
-a, a:focus, a:active {
-	color: var(--red);
-}
-
-a:hover {
-	color: #016760;
-}
 
 a[href*='tel'], a[href*='mailto'] {
 	white-space: nowrap;
 }
 
 .link-hover {
-	color: #016760;
+	color: var(--red);
 }
 
 .link-press {
-	color: #016760;
+	color: var(--red);
 }
 
 .privacy-link {
@@ -1116,6 +1103,7 @@ a[href*='tel'], a[href*='mailto'] {
 	min-height: 310px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
 	transition: all .3s ease;
+	background-color:var(--grey);
 }
 
 .box-contacts-body {
@@ -1140,6 +1128,7 @@ a[href*='tel'], a[href*='mailto'] {
 	font-size: 18px;
 	line-height: 1.67;
 	letter-spacing: .025em;
+	color:#fff;
 }
 
 .box-contacts-link a, .box-contacts-link a:focus, .box-contacts-link a:active {

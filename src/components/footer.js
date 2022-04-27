@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io"
 import { Link } from "react-router-dom";
 export default function Footer() {
     return (
-        <footer className="section footer-corporate context-dark">
+        <footer className="section footer-corporate " style={{ 'background-color': 'var(--grey)' }}>
             <div className="footer-corporate-inset" >
                 <div className="container">
                     <div className="row row-40 justify-content-lg-between">
@@ -38,7 +38,7 @@ export default function Footer() {
                                                 </div>
                                                 <div className="unit-body">
                                                     <a className="link-aemail" href="mailto:#">
-                                                        @demolink.org
+                                                        kalboadventure@gmail.com
                                                     </a>
                                                 </div>
                                             </div>
@@ -47,7 +47,7 @@ export default function Footer() {
                                             <div className="unit">
                                                 <div className="unit-left">
                                                     <span className="icon">
-                                                        <GoLocation/>
+                                                        <GoLocation />
                                                     </span>
                                                 </div>
                                                 <div className="unit-body">
@@ -117,7 +117,10 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="footer-corporate-bottom-panel">
+            <div className="footer-corporate-bottom-panel" style={{
+                'background-color': 'var(--gray)',
+                'color': '#fff'
+            }}>
                 <div className="container">
                     <div className="row justfy-content-xl-space-berween row-10 align-items-md-center2">
                         <div className="col-sm-6 col-md-4 text-sm-right text-md-center">
