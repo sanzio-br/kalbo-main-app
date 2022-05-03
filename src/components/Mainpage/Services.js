@@ -6,9 +6,9 @@ import { BiSupport } from 'react-icons/bi'
 import { GiWorld } from 'react-icons/gi'
 export default function Services() {
   return (
-    <section className="section section-sm">
+    <section className="section section-sm" style={{'background-color':'var(--gray)'}}>
       <div className="container">
-        <h3>Our Services</h3>
+        <h3 style={{'color': 'var(--red)'}}>Our Services</h3>
         <div className="row row-30">
           <div className="col-sm-6 col-lg-4">
             <article className="box-icon-classNameic" data-aos="fade-down-right">
@@ -70,7 +70,7 @@ export default function Services() {
               </div>
             </article>
           </div>
-          <div className="col-sm-6 col-lg-4" data-aos="fade-up-right">
+          <div className="col-sm-6 col-lg-4" >
             <article className="box-icon-classNameic" data-aos="fade-up">
               <div className="unit box-icon-classNameic-body flex-column flex-md-row text-md-left flex-lg-column text-lg-center flex-xl-row text-xl-left">
                 <div className="unit-left">

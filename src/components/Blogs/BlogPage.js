@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import {  getDocs, collection } from "firebase/firestore";
+import { getDocs, collection } from "firebase/firestore";
 import { db } from "../../firebase-config";
-import '../../css/blogs.css'
 import { Link } from 'react-scroll';
-function Codeholder() {
+import PostComment from "./comments";
+import logo from '../../images/logo.PNG'
+function Blog() {
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
   useEffect(() => {
@@ -19,20 +20,20 @@ function Codeholder() {
       <div className="container">
         <div className="row align-items-start">
           <div className="col-lg-8 m-15px-tb">
-            {postLists.map(({ title, postText, author, id }) => {
+            {postLists.map(({ title, postText, author, id, url }) => {
               return (
-                <article className="article" id={`${id}`}>
+                <article className="article" id={`${id}`} data-aos="fade-up" key={id}>
                   <div className="article-img">
-                    <img src="https://via.placeholder.com/800x350/87CEFA/000000" title="" alt="" />
+                    <img src={url} title="" alt="" />
                   </div>
                   <div className="article-title">
                     <h3>{title}</h3>
                     <div className="media">
                       <div className="avatar">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="" />
+                        <img src={logo} title="" alt="" />
                       </div>
                       <div className="media-body">
-                        <label>{author.name}</label>
+                        <label>Kalbo Admin</label>
                       </div>
                     </div>
                   </div>
@@ -42,14 +43,15 @@ function Codeholder() {
                 </article>
               )
             })}
+            <PostComment />
           </div>
-          <div className="col-lg-4 m-15px-tb blog-aside">
+          <div className="col-lg-4 m-15px-tb blog-aside" data-aos="fade-left">
             <div className="widget widget-latest-post">
               <div className="widget-title">
                 <h3>Latest Post</h3>
               </div>
               <div className="widget-body">
-                {postLists.map(({ title, author, id }) => {
+                {postLists.map(({ title,id ,url}) => {
                   return (
                     <div className="latest-post-aside media">
                       <div className="lpa-left media-body">
@@ -60,13 +62,13 @@ function Codeholder() {
                         </div>
                         <div className="lpa-meta">
                           <a className="name" href="/">
-                            {author.name}
+                            Kalbo admin
                           </a>
                         </div>
                       </div>
                       <div className="lpa-right">
-                        <a href="/">
-                          <img src="https://via.placeholder.com/400x200/FFB6C1/000000" title="" alt="" />
+                        <a href={`${id}`}>
+                          <img src={url} title="" alt="" />
                         </a>
                       </div>
                     </div>
@@ -81,4 +83,4 @@ function Codeholder() {
   );
 }
 
-export default Codeholder;
+export default Blog;

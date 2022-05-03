@@ -1,10 +1,11 @@
 export default function ContactsForm() {
     return (
-        <section className="section section-sm section-last bg-default text-left">
+        <section className="section section-sm section-last text-left" style={{
+            'background-color':'var(--gray)'}}>
             <div className="container">
                 <article className="title-classNameic">
                     <div className="title-classNameic-title">
-                        <h3>Get in touch</h3>
+                        <h3 style={{'color':'var(--red)'}}>Get in touch</h3>
                     </div>
                     <div className="title-classNameic-text">
                         <p>If you have any questions, just fill in the contact form, and we will answer you shortly.</p>

@@ -1,6 +1,8 @@
 export default function Contactinfo() {
     return (
-        <section className="section section-sm section-first bg-default">
+        <section className="section section-sm section-first" style={{
+            'background-color':'var(--grey)'
+        }}>
             <div className="container">
                 <div className="row row-30 justify-content-center">
                     <div className="col-sm-8 col-md-6 col-lg-4">
@@ -8,8 +10,8 @@ export default function Contactinfo() {
                             <div className="box-contacts-body">
                                 <div className="box-contacts-icon fl-bigmug-line-cellphone55"></div>
                                 <div className="box-contacts-decor"></div>
-                                <p className="box-contacts-link"><a href="tel:#">+1 323-913-4688</a></p>
-                                <p className="box-contacts-link"><a href="tel:#">+1 323-888-4554</a></p>
+                                <p className="box-contacts-link"><a href="tel:#">+254720 126177</a></p>
+                                <p className="box-contacts-link"><a href="tel:#">+254720 126177</a></p>
                             </div>
                         </article>
                     </div>
@@ -18,7 +20,7 @@ export default function Contactinfo() {
                             <div className="box-contacts-body">
                                 <div className="box-contacts-icon fl-bigmug-line-up104"></div>
                                 <div className="box-contacts-decor"></div>
-                                <p className="box-contacts-link"><a href="/">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></p>
+                                <p className="box-contacts-link"><a href="/">nairobi kenya</a></p>
                             </div>
                         </article>
                     </div>
@@ -27,8 +29,8 @@ export default function Contactinfo() {
                             <div className="box-contacts-body">
                                 <div className="box-contacts-icon fl-bigmug-line-chat55"></div>
                                 <div className="box-contacts-decor"></div>
-                                <p className="box-contacts-link"><a href="mailto:#">mail@demolink.org</a></p>
-                                <p className="box-contacts-link"><a href="mailto:#">info@demolink.org</a></p>
+                                <p className="box-contacts-link"><a href="mailto:#">kalboadventure2019@gmail.com</a></p>
+                                <p className="box-contacts-link"><a href="mailto:#">kalboadventure2019@gmail.com</a></p>
                             </div>
                         </article>
                     </div>

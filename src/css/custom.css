@@ -1,3 +1,18 @@
+/* service page in the main page styling start */
+
+.box-icon-classNameic-text{
+    color: #fff !important;
+}
+
+/* service page in the main page styling  end*/
+
+/* contacts page styling start  */
+.title-classNameic-text{
+    color:#fff;
+}
+
+/* contacts page styling end  */
+
 .gallery-section{
     display: flex;
     align-items: center;
@@ -166,6 +181,9 @@
         -webkit-transform: rotate(135deg);
         transform: rotate(135deg)
     }
+}
+.carousel-item{
+    position: relative;
 }
 .carousel-inner > .cover-text{
     position: absolute;

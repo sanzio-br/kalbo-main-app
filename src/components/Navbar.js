@@ -1,64 +1,86 @@
-import { FiInstagram } from "react-icons/fi"
-import { FaFacebookF } from "react-icons/fa"
-import { AiFillPhone } from "react-icons/ai"
-import { IoLogoWhatsapp } from "react-icons/io"
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-const Nav = () => {
-    const [activeNav, setActiveNav] = useState("home")
-    return (
-        <header className={ window.scrollY > 100 ? "active" : ""}>
-            <nav>
-                <ul className='nav-links'>
-                    <Link to='/'>
-                        <li
-                            id='link'
-                            onClick={() => setActiveNav("home")}
-                            className={activeNav === "home" ? "active" : ""}>Home
-                        </li>
-                    </Link>
-                    <Link to='/About'>
-                        <li
-                            id='link'
-                            onClick={() => setActiveNav("about")}
-                            className={activeNav === "about" ? "active" : ""}>
-                            About
-                        </li>
-                    </Link>
-                    <Link to='/Events'>
-                        <li
-                            id='link'
-                            onClick={() => setActiveNav("projects")}
-                            className={activeNav === "projects" ? "active" : ""}>
-                            Events
-                        </li>
-                    </Link>
-                    <Link to='/Blogs'>
-                        <li
-                            id='link'
-                            onClick={() => setActiveNav("services")}
-                            className={activeNav === "services" ? "active" : ""}>
-                            Blogs
-                        </li>
-                    </Link>
-                    <Link to='/Contacts'>
-                        <li
-                            id='link'
-                            onClick={() => setActiveNav("contacts")}
-                            className={activeNav === "contacts" ? "active" : ""}>
-                            Contacts
-                        </li>
-                    </Link>
-                </ul>
-                <ul id="icons">
-                    <Link to="/"><AiFillPhone /></Link>
-                    <Link to="/"><FiInstagram /></Link>
-                    <Link to="/"><FaFacebookF /></Link>
-                    <Link to="/"><IoLogoWhatsapp /></Link>
-                    
-                </ul>
-            </nav>
-        </header>
-    )
+import {useState} from 'react'
+import {Link} from 'react-router-dom'
+import logo from '../images/logo 0.5.PNG'
+//Pages
+export default function Topbar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const Close = () => setClick(false);
+  
+  return (
+    <div>
+     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
+      <nav className="navbar" onClick={e => e.stopPropagation()}>
+        <div className="nav-container">
+          <Link exact to="/" className="nav-logo">
+          <div className="avatar">
+                        <img src={logo} title="" alt="" />
+                      </div>
+            Kalbo Adventure
+          </Link>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                exact
+                to="/About"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                exact
+                to="/Tours"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Tours
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                exact
+                to="/Blogs"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+              >
+                Blogs
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                exact
+                to="/Contacts"
+                activeClassName="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+          <div className="nav-icon" onClick={handleClick}>
+            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
+          </div>
+        </div>
+      </nav>
+    </ div>
+  );
 }
-export default Nav;
