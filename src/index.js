@@ -7,7 +7,6 @@ import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
 import "../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../node_modules/bootstrap/dist/js/bootstrap"
 import './css/style.css'
-// import './css/bootstrap.css'
 import './css/card.css'
 import './css/swiper.css'
 import './css/Navbar.css'

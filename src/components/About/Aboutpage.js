@@ -1,16 +1,14 @@
 
 import Breadcrumbs from "./Breadcrumbs";
 import Choice from "./Choose";
-import Counter from "./Counter";
-import Testimonies from "./Testimonies";
+import Team from "./Team";
 
 export default function Aboutpage() {
     return (
         <>
             <Breadcrumbs />
             <Choice />
-            <Testimonies />
-            <Counter />
+            <Team/>
         </>
     )
 }

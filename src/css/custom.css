@@ -43,6 +43,23 @@
     background-image: url(../images/Kalbo\ Adventures\ Karuru\ Experience\ 2021-31.jpg);
 }
 
-.destinations{
+/* about page css start */
+
+.team{
     display: grid;
+    background-color: var(--gray);
+    text-align: center;
 }
+.team > .team-section {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    grid-gap: 7px;
+    padding: 10px;
+}
+.team > .team-section > .card{
+    margin: 1em;
+    background-color: var(--grey);
+}
+
+/* about page css end  */
