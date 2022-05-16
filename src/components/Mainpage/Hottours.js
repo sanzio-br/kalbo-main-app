@@ -24,9 +24,9 @@ export default function Hottours() {
       <h3 className="oh-desktop" style={{'color':'var(--red)'}}><span className="d-inline-block wow slideInDown">Hot Tours</span></h3>
       <div className="card-container">
         {
-          hottours.map(({ title, destination, numOfDays, price,url,date}) => {
+          hottours.map(({ title, destination, numOfDays, price,url,date, id}) => {
             return (
-              <div className="eventCard" data-aos="fade-up">
+              <div className="eventCard" data-aos="fade-up" key={id}>
                 <div className="imgBox">
                   <img src={url} alt="" />
                 </div>

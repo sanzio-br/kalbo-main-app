@@ -4,6 +4,14 @@
 	--grey:#424242;
 	--gray:#333333;
 }
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	/* outline: 1px solid #f00 !important;
+	opacity: 1 !important;
+	visibility: visible !important; */
+}
 a:focus,
 button:focus {
 	outline: none !important;
@@ -190,7 +198,7 @@ h3,
 @media (min-width: 768px) {
 	h3,
 	.heading-3 {
-		font-size: 30px;
+		font-size: 20px;
 	}
 }
 

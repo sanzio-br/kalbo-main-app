@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { NavbarBrand } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import logo from '../images/logo 0.5.PNG'
 //Pages
@@ -10,14 +11,14 @@ export default function Topbar() {
   
   return (
     <div>
-     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
+     {/* <div className={click ? "main-container" : ""}  onClick={()=>Close()} /> */}
       <nav className="navbar" onClick={e => e.stopPropagation()}>
         <div className="nav-container">
           <Link exact to="/" className="nav-logo">
           <div className="avatar">
                         <img src={logo} title="" alt="" />
                       </div>
-            Kalbo Adventure
+            <NavbarBrand>Kalbo Adventure</NavbarBrand>  
           </Link>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">

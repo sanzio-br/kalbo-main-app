@@ -1,86 +1,52 @@
-import {useState} from 'react'
-import {Link} from 'react-router-dom'
-import logo from '../images/logo 0.5.PNG'
-//Pages
-export default function Topbar() {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-  const Close = () => setClick(false);
-  
+import image1 from '../images/Kalbo Adventures Karuru Experience 2021-31.jpg'
+import Carousel from "react-bootstrap/Carousel"
+import { Link } from 'react-router-dom';
+export default function ControlledCarousel() {
   return (
-    <div>
-     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
-      <nav className="navbar" onClick={e => e.stopPropagation()}>
-        <div className="nav-container">
-          <Link exact to="/" className="nav-logo">
-          <div className="avatar">
-                        <img src={logo} title="" alt="" />
-                      </div>
-            Kalbo Adventure
-          </Link>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link
-                exact
-                to="/"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                exact
-                to="/About"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                exact
-                to="/Tours"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                Tours
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                exact
-                to="/Blogs"
-                activeClassName="active"
-                className="nav-links"
-                onClick={click ? handleClick : null}
-              >
-                Blogs
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                exact
-                to="/Contacts"
-                activeClassName="active"
-                className="nav-links"
-               onClick={click ? handleClick : null}
-              >
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
-          </div>
-        </div>
-      </nav>
-    </ div>
+    <section className='hero'>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image1}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3 className='fs-3'>Build your Next Holiday Trip with Us</h3>
+            <Link to='Contacts'>
+              <p className="contacts-btn">Get in Touch</p>
+            </Link>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image1}
+            alt="Second slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Enjoy the Best Destinations</h3>
+            <Link to='Contacts'>
+              <p className="contacts-btn">Get in Touch</p>
+            </Link>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image1}
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>A team of professional Travel Experts</h3>
+            <Link to='Contacts'>
+              <p className="contacts-btn">Get in Touch</p>
+            </Link>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </section>
   );
 }

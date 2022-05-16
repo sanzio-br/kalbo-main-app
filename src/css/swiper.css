@@ -29,7 +29,7 @@
       background-color: #000;
       width: 100%;
       height: 100%;
-      opacity: .8;
+      opacity: .4;
   }
   .swiper-slide > .cover-text{
       position: absolute;
@@ -77,4 +77,12 @@
     .swiper-slide > .cover-text{
       margin-left: 7px;
     }
+  }
+  .contacts-btn{
+    border: 1px solid #fff;
+    padding:.5em 1em;
+  }
+  .contacts-btn:hover{
+    background-color:var(--grey);
+    border: 1px solid var(--grey);
   }

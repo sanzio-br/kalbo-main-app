@@ -1,0 +1,6 @@
+.carousel{
+    height: var(100vh - 12vh) !important;
+}
+.carousel-caption > a{
+    text-align: center;
+}
