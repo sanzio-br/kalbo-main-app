@@ -44,22 +44,26 @@
 }
 
 /* about page css start */
-
-.team{
-    display: grid;
-    background-color: var(--gray);
-    text-align: center;
+.aboutus > p{
+    font-size: clamp(.9rem, 2.5vw, 1.1rem); 
+    text-align: start;
+    margin-bottom:10px;
 }
-.team > .team-section {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
-    grid-gap: 7px;
-    padding: 10px;
+.service-list, .describe{
+    font-size: clamp(.9rem, 2.5vw, 1rem)
 }
-.team > .team-section > .card{
-    margin: 1em;
+.accordion-item{
     background-color: var(--grey);
 }
-
+.accordion-header{
+    color: var(--red);
+    font-weight: 500;
+    background-color: var(--grey);
+}
+.accordion-header.active{
+    box-shadow: 2px 2px 2px 1px var(--red);
+}
+.accordion-body{
+    font-size: 1.2em;
+}
 /* about page css end  */

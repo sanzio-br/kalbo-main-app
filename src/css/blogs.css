@@ -191,6 +191,7 @@
 }
 .article-title > h3{
   color: var(--red);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 .article .article-title h6 {
   font-size: 14px;

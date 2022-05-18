@@ -40,15 +40,15 @@ export default function About() {
                 {/* <!-- Tab panes--> */}
                 <div className="tab-content">
                   <div className="tab-pane fade show active" id="tabs-7-1">
-                    <p>
+                    <p >
                       Kalbo adventures is committed to bringing our clients the best in value and quality travel arrangements. We are passionate about
                       travel and sharing the world's wonders with you.
                     </p>
                     <div className="group-md group-middle">
-                      <a className="button button-secondary button-pipaluk" href="/contact">
+                      <a className="button button-secondary button-pipaluk" href="/Contact">
                         Get in Touch
                       </a>
-                      <a className="button button-black-outline button-md" href="/blogs">Read More</a></div>
+                      <a className="button button-black-outline button-md" href="/Blogs">Read More</a></div>
                   </div>
                   <div className="tab-pane fade" id="tabs-7-2">
                     <p>

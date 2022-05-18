@@ -5,6 +5,7 @@ import { AiOutlineCalendar } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { AiOutlineClockCircle } from 'react-icons/ai'
 import Breadcrumbs from "./crubs";
+import BookButton from "../BookBtn";
 export default function Events() {
   const [eventsList, setEventsList] = useState([]);
   const postsCollectionRef = collection(db, "events");
@@ -18,9 +19,7 @@ export default function Events() {
     getEvents();
   }, []);
   return (
-    <section style={{
-      'text-align':'center'
-    }}>
+    <section>
       <Breadcrumbs/>
       <h3 style={{
         'color': 'var(--red)',
@@ -47,7 +46,7 @@ export default function Events() {
                   <span className="days">
                     <AiOutlineClockCircle /> Number of days: {numOfDays}
                   </span>
-                  <button><span>ksh </span>{price}<span>.00</span></button>
+                  <BookButton price={price} destination={destination} title={title}/>
                 </div>
               </div>
             )

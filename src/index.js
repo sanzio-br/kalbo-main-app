@@ -13,6 +13,7 @@ import './css/Navbar.css'
 import './css/custom.css'
 import './css/blogs.css'
 import './css/Carousel.css'
+import './css/form.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
