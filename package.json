@@ -1,4 +1,5 @@
 {
+    "homepage": "http://sanzio-br.github.io/kalbo-main-app",
     "name": "kalbo-adventures",
     "version": "0.1.0",
     "private": true,
@@ -12,6 +13,7 @@
         "bootstrap": "^5.1.3",
         "express": "^4.18.1",
         "firebase": "^9.6.11",
+        "gh-pages": "^4.0.0",
         "mdb-ui-kit": "^4.0.0",
         "mediaquery": "^0.0.4",
         "react": "^18.0.0",
@@ -27,6 +29,8 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
+        "predeploy":"npm run build",
+        "deploy":"gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
