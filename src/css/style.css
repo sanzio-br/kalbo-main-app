@@ -109,7 +109,7 @@ body {
 	font-weight: 400;
 	letter-spacing: normal;
 	color: #ffffff !important;
-	background-color: var(--red) !important;
+	background-color: var(--grey) !important;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 }

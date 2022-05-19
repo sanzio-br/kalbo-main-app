@@ -11,7 +11,7 @@ export default function Topbar() {
   
   return (
     <div>
-     {/* <div className={click ? "main-container" : ""}  onClick={()=>Close()} /> */}
+     <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
       <nav className="navbar" onClick={e => e.stopPropagation()}>
         <div className="nav-container">
           <Link exact to="/" className="nav-logo">

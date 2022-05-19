@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="section footer-corporate " style={{ 'background-color': 'var(--grey)' }}>
-            <div className="footer-corporate-inset" >
+            <div className="footer-corporate-inset" data-aos="fade-up" >
                 <div className="container">
                     <div className="row row-40 justify-content-lg-between">
-                        <div className="col-sm-6 col-md-12 col-lg-3 col-xl-4" data-aos="fade-right">
+                        <div className="col-sm-6 col-md-12 col-lg-3 col-xl-4" >
                             <div className="oh-desktop">
                                 <div className="wow slideInRight" data-wow-delay="0s">
                                     <h6 className="text-spacing-100 text-uppercase">
@@ -61,7 +61,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6 col-md-5 col-lg-3 col-xl-4" data-aos="fade-left">
+                        <div className="col-sm-6 col-md-5 col-lg-3 col-xl-4">
                             <div className="oh-desktop">
                                 <div className="wow slideInDown" data-wow-delay="0s">
                                     <h6 className="text-spacing-100 text-uppercase">
@@ -82,7 +82,7 @@ export default function Footer() {
                                     <article className="post post-minimal-2">
                                         <p className="post-minimal-2-title">
                                             <a href="/Blogs">
-                                                Top 10 Hotels: Rating by Wonder Tour Travel Experts
+                                                Top 10 Hotels: Rating by Kalbo adventures Experts
                                             </a>
                                         </p>
                                         <div className="post-minimal-2-time">
@@ -94,7 +94,7 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-11 col-md-7 col-lg-5 col-xl-4" data-aos="fade-right">
+                        <div className="col-sm-11 col-md-7 col-lg-5 col-xl-4" >
                             <div className="oh-desktop">
                                 <div className="wow slideInLeft" data-wow-delay="0s">
                                     <h6 className="text-spacing-100 text-uppercase">

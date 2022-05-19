@@ -60,7 +60,7 @@ export default function BookButton(props) {
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={() => sendEmail}>
+                    <Button variant="primary" onClick={sendEmail}>
                         Submit
                     </Button>
                 </Modal.Footer>
