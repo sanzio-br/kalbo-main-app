@@ -11,7 +11,7 @@ export default function Team() {
             {
                 accordion.map(({ id, title, body }) => {
                     return (
-                        <Accordion flush>
+                        <Accordion flush key={id}>
                             <Accordion.Item eventKey={id}>
                                 <Accordion.Header>
                                     <h4>

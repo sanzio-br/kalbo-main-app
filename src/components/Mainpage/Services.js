@@ -19,7 +19,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="unit-body">
-                  <h5 className="box-icon-classNameic-title"><a href="/">Personalized Matching</a></h5>
+                  <h5 className="box-icon-classNameic-title"><a href="/kalbo-main-app/Tours">Personalized Matching</a></h5>
                   <p className="box-icon-classNameic-text">Our unique matching system lets you find just the tour you want for your next holiday.</p>
                 </div>
               </div>
@@ -34,7 +34,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="unit-body">
-                  <h5 className="box-icon-classNameic-title"><a href="/">Wide Variety of Tours</a></h5>
+                  <h5 className="box-icon-classNameic-title"><a href="/kalbo-main-app/Tours">Wide Variety of Tours</a></h5>
                   <p className="box-icon-classNameic-text">We offer a wide variety of personally picked tours with destinations all over the globe.</p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="unit-body">
-                  <h5 className="box-icon-classNameic-title"><a href="/">Highly Qualified Service</a></h5>
+                  <h5 className="box-icon-classNameic-title"><a href="/kalbo-main-app/Tours">Highly Qualified Service</a></h5>
                   <p className="box-icon-classNameic-text">Our tour managers are qualified, skilled, and friendly to bring you the best service.</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="unit-body">
-                  <h5 className="box-icon-classNameic-title"><a href="/">24/7 Support</a></h5>
+                  <h5 className="box-icon-classNameic-title"><a href="/kalbo-main-app/Tours">24/7 Support</a></h5>
                   <p className="box-icon-classNameic-text">You can always get professional support from our staff 24/7 and ask any question you have.</p>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="unit-body">
-                  <h5 className="box-icon-classNameic-title"><a href="/">Handpicked Hotels</a></h5>
+                  <h5 className="box-icon-classNameic-title"><a href="/kalbo-main-app/Tours">Handpicked Hotels</a></h5>
                   <p className="box-icon-classNameic-text">Our team offers only the best selection of affordable and luxury hotels to our clients.</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="unit-body">
-                  <h5 className="box-icon-classNameic-title"><a href="/">Best Price Guarantee</a></h5>
+                  <h5 className="box-icon-classNameic-title"><a href="/kalbo-main-app/Tours">Best Price Guarantee</a></h5>
                   <p className="box-icon-classNameic-text">If you find tours that are cheaper than ours, we will compensate the difference.</p>
                 </div>
               </div>

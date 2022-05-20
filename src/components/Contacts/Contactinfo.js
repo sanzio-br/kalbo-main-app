@@ -15,12 +15,12 @@ export default function Contactinfo() {
                                 </div>
                                 <div className="box-contacts-decor"></div>
                                 <p className="box-contacts-link">
-                                    <a href="tel:#">
+                                    <a href="tel:+254720 126177">
                                         +254720 126177
                                     </a>
                                 </p>
                                 <p className="box-contacts-link">
-                                    <a href="tel:#">
+                                    <a href="tel:+254720 126177">
                                         +254720 126177
                                     </a>
                                 </p>
@@ -35,7 +35,7 @@ export default function Contactinfo() {
                                 </div>
                                 <div className="box-contacts-decor"></div>
                                 <p className="box-contacts-link">
-                                    <a href="/contacts">
+                                    <a href="/kalbo-main-app/Contacts">
                                         nairobi kenya
                                     </a>
                                 </p>
@@ -50,12 +50,12 @@ export default function Contactinfo() {
                                 </div>
                                 <div className="box-contacts-decor"></div>
                                 <p className="box-contacts-link">
-                                    <a href="mailto:#">
+                                    <a href="mailto:kalboadventure2019@gmail.com">
                                         kalboadventure2019@gmail.com
                                     </a>
                                 </p>
                                 <p className="box-contacts-link">
-                                    <a href="mailto:#">
+                                    <a href="mailto:kalboadventure2019@gmail.com">
                                         kalboadventure2019@gmail.com
                                     </a>
                                 </p>

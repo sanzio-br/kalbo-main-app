@@ -53,7 +53,7 @@ function Blog() {
               <div className="widget-body">
                 {postLists.map(({ title,id ,url}) => {
                   return (
-                    <div className="latest-post-aside media">
+                    <div className="latest-post-aside media" key={id}>
                       <div className="lpa-left media-body">
                         <div className="lpa-title">
                           <Link to={`${id}`}>
@@ -61,7 +61,7 @@ function Blog() {
                           </Link>
                         </div>
                         <div className="lpa-meta">
-                          <a className="name" href="/">
+                          <a className="name" href="/kalbo-main-app">
                             Kalbo admin
                           </a>
                         </div>

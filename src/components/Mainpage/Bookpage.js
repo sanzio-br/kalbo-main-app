@@ -20,7 +20,7 @@ export default function Bookpage() {
               with destinations all over the world. Browse our website to find your dream tour!
             </p>
             <a className="button button-secondary button-pipaluk"
-              href="https://wa.me/+254720 126177" data-aos="fade-up">
+              href="/kalbo-main-app/Tours" data-aos="fade-up">
               Book a Tour Now
             </a>
           </div>

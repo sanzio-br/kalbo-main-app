@@ -7,7 +7,7 @@ import Team from "./Team";
 
 export default function Aboutpage() {
     return (
-        <div style={{'text-align':'center'}}>
+        <div style={{'textAlign':'center'}}>
             <Breadcrumbs />
             <div style={{'background-color':'var(--gray)'}} className="mb-5">
             <Container>

@@ -19,7 +19,7 @@ export default function Events() {
     getEvents();
   }, []);
   return (
-    <section>
+    <section style={{'textAlign':'center'}}>
       <Breadcrumbs/>
       <h3 style={{
         'color': 'var(--red)',

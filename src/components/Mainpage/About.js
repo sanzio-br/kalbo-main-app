@@ -2,7 +2,7 @@ import logo from '../../images/logo.PNG'
 export default function About() {
   return (
     <section className="section section-sm section-first bg-default text-md-left" style={
-      { 'background-color': 'var(--gray)' }
+      { 'backgroundColor': 'var(--gray)' }
     } >
       <div className="container">
         <div className="row row-50 align-items-center justify-content-center justify-content-xl-between">
@@ -45,20 +45,20 @@ export default function About() {
                       travel and sharing the world's wonders with you.
                     </p>
                     <div className="group-md group-middle">
-                      <a className="button button-secondary button-pipaluk" href="/Contact">
+                      <a className="button button-secondary button-pipaluk" href="/kalbo-main-app/Contact">
                         Get in Touch
                       </a>
-                      <a className="button button-black-outline button-md" href="/Blogs">Read More</a></div>
+                      <a className="button button-black-outline button-md" href="/kalbo-main-app/Blogs">Read More</a></div>
                   </div>
                   <div className="tab-pane fade" id="tabs-7-2">
                     <p>
                       We are proud to offer excellent quality and value for money in our tours, which give you the chance to experience your chosen
                       destination in an authentic and exciting way.</p>
                     <div className="group-md group-middle">
-                      <a className="button button-secondary button-pipaluk" href="/contacts">
+                      <a className="button button-secondary button-pipaluk" href="/kalbo-main-app/Contacts">
                         Get in Touch
                       </a>
-                      <a className="button button-black-outline button-md" href="/blogs">
+                      <a className="button button-black-outline button-md" href="/kalbo-main-app/Blogs">
                         Read More
                       </a>
                     </div>
@@ -68,10 +68,10 @@ export default function About() {
                       available in the industry.
                     </p>
                     <div className="group-md group-middle">
-                      <a className="button button-secondary button-pipaluk" href="/contacts">
+                      <a className="button button-secondary button-pipaluk" href="/kalbo-main-app/Contacts">
                         Get in Touch
                       </a>
-                      <a className="button button-black-outline button-md" href="/blogs">
+                      <a className="button button-black-outline button-md" href="/kalbo-main-app/Blogs">
                         Read More
                       </a>
                     </div>
