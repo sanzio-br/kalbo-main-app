@@ -101,9 +101,10 @@ export default function Footer() {
                                         Quick links
                                     </h6>
                                     <ul className="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
-                                        <li><a href="/About">About us</a></li>
-                                        <li><a href="/Events">Our Tours</a></li>
-                                        <li><a href="/Blogs">Blog</a></li>
+                                        <li><a href="/kalbo-main-app/About">About us</a></li>
+                                        <li><a href="/kalbo-main-app/Events">Our Tours</a></li>
+                                        <li><a href="/kalbo-main-app/Blogs">Blog</a></li>
+                                        <li><a href="/kalbo-main-app/Contacts">Contacts</a></li>
                                     </ul>
                                     <div className="group-md group-middle justify-content-sm-start">
                                         <a className="button button-lg button-primary button-ujarak" href="/Contacts">
@@ -126,7 +127,7 @@ export default function Footer() {
                         <div className="col-sm-6 col-md-4 text-sm-right text-md-center">
                             <div>
                                 <ul className="list-inline list-inline-sm footer-social-list-2">
-                                    <li><Link to="/"><AiFillPhone /></Link></li>
+                                    <li><Link to=""><AiFillPhone /></Link></li>
                                     <li><Link to="/"><FiInstagram /></Link></li>
                                     <li><Link to="/"><FaFacebookF /></Link></li>
                                     <li><Link to="/https://wa.me/+254720 126177"><IoLogoWhatsapp /></Link></li>
