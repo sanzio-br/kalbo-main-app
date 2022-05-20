@@ -14,7 +14,7 @@ export default function Topbar() {
      <div className={click ? "main-container" : ""}  onClick={()=>Close()} />
       <nav className="navbar" onClick={e => e.stopPropagation()}>
         <div className="nav-container">
-          <Link exact to="/" className="nav-logo">
+          <Link exact to="/kalbo-main-app" className="nav-logo">
           <div className="avatar">
                         <img src={logo} title="" alt="" />
                       </div>
@@ -24,7 +24,7 @@ export default function Topbar() {
             <li className="nav-item">
               <Link
                 exact
-                to="/"
+                to="/kalbo-main-app"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
@@ -35,7 +35,7 @@ export default function Topbar() {
             <li className="nav-item">
               <Link
                 exact
-                to="/About"
+                to="/kalbo-main-app/About"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
@@ -46,7 +46,7 @@ export default function Topbar() {
             <li className="nav-item">
               <Link
                 exact
-                to="/Tours"
+                to="/kalbo-main-app/Tours"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
@@ -57,7 +57,7 @@ export default function Topbar() {
             <li className="nav-item">
               <Link
                 exact
-                to="/Blogs"
+                to="/kalbo-main-app/Blogs"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
@@ -68,7 +68,7 @@ export default function Topbar() {
             <li className="nav-item">
               <Link
                 exact
-                to="/Contacts"
+                to="/kalbo-main-app/Contacts"
                 activeClassName="active"
                 className="nav-links"
                onClick={click ? handleClick : null}
