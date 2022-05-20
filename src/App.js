@@ -14,11 +14,11 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route exact path="/" element={<Mainpage />} />
-        <Route path="/About" element={<Aboutpage />} />
-        <Route path="/Contacts" element={<Contactpage />} />
-        <Route path="/Blogs" element={<Blogs />} />
-        <Route path="/Tours" element={<Events />} />
+        <Route exact path="/kalbo-main-app" element={<Mainpage />} />
+        <Route exact path="/kalbo-main-app/About" element={<Aboutpage />} />
+        <Route exact path="/kalbo-main-app/Contacts" element={<Contactpage />} />
+        <Route exact path="/kalbo-main-app/Blogs" element={<Blogs />} />
+        <Route exact path="/kalbo-main-app/Tours" element={<Events />} />
       </Routes>
       <Footer />
     </Router>
