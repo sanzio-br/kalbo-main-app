@@ -14,6 +14,7 @@ import './css/custom.css'
 import './css/blogs.css'
 import './css/Carousel.css'
 import './css/form.css'
+import './css/loader.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

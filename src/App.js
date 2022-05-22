@@ -1,17 +1,20 @@
-import Aboutpage from "./components/About/Aboutpage";
-import Contactpage from "./components/Contacts/Contactpage";
-import Mainpage from "./components/Mainpage/Mainpage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/footer";
-import Blogs from "./components/Blogs/Blogspage";
-import Events from "./components/events/EventsPage";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from "./components/Navbar";
+import { lazy, Suspense } from "react";
+import Loader from "./components/loader";
+const Navbar =lazy(()=>import("./components/Navbar"));
+const Mainpage = lazy(()=> import("./components/Mainpage/Mainpage"));
+const Aboutpage =lazy(()=>import("./components/About/Aboutpage"));
+const Events =lazy(()=>import("./components/events/EventsPage"));
+const Blogs =lazy(()=>import("./components/Blogs/Blogspage"));
+const Contactpage =lazy(()=>import("./components/Contacts/Contactpage"));
+const Footer =lazy(()=>import("./components/footer"));
 function App() {
   AOS.init();
   return (
     <Router>
+      <Suspense fallback={<Loader/>}>
       <Navbar/>
       <Routes>
         <Route exact path="/kalbo-main-app" element={<Mainpage />} />
@@ -21,6 +24,7 @@ function App() {
         <Route exact path="/kalbo-main-app/Tours" element={<Events />} />
       </Routes>
       <Footer />
+      </Suspense>
     </Router>
   );
 }
